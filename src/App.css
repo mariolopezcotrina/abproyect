@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+
+
+.section{
+  padding-top:  40px;
+  padding-bottom: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slider{
+  margin-top: 120px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.circulo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #800404;
+  padding: 20px;
+  margin:  0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.img{
+  width: 100%;
+}
+
+.valores{
+  background-image: url(./components/img/fondo2.svg);
+  width: 100%;
+  height: 500px;
+  align-content: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: relative;
+}
+
+.absolute{
+  position:absolute;
+  margin-top: 200px;
+}
+
+.contact1{
+  background-color: #800404;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.heading-section{
+  color: #800404;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.map-container{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  
+}
+.map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  border: 0;
+}
+
+.servi{
+  height: 300px;
+  
+}
+
+.servi img{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.galeri-text{
+  color: #800404;
+}
+
+/*--------------------------------------------------------------
+# Our Clients
+--------------------------------------------------------------*/
+.clients .swiper-slide img {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.clients .swiper-slide img:hover {
+  opacity: 1;
+}
+
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #5cb874;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #5cb874;
 }
